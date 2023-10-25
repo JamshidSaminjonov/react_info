@@ -2,10 +2,10 @@ import React from "react";
 import "./fruits.css";
 class Fruit extends React.Component {
   render() {
-    let href = this.props.href;
-    let color = this.props.color;
-    console.log(color);
-    let title = this.props.title;
+    // let href = this.props.href;
+    // let color = this.props.color;
+    // let title = this.props.title;
+    let { href, color, title } = this.props;
     return (
       <>
         <div className="card">

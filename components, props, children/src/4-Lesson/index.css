@@ -1,0 +1,61 @@
+.btn {
+  overflow: hidden;
+  border-radius: 50px;
+  justify-content: center;
+  width: 140px;
+  display: flex;
+  padding: 1px;
+  height: 70px;
+  align-items: center;
+}
+/* button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+} */
+/* .sun,
+.moon {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all ease 0.8s;
+}
+.sun {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  transform: translate(65px, 0);
+}
+.opasity {
+  opacity: 0;
+}
+.moon {
+  transform: translate(-67px, 0);
+} */
+.opasity {
+  opacity: 0;
+}
+
+.btn-sun {
+  background-image: linear-gradient(to left, #3482e9, #002b63, #000000);
+  box-shadow: 5px 0px 1px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to left, #8f8f8f #3d3d3dc2, #000000);
+  /* background-image: linear-gradient(to right, #000000, #3482e9); */
+
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); */
+
+  /* transform: translate(50px, 0); */
+}
+.btn-moon {
+  background-image: linear-gradient(to right, #3482e9, #ffffff);
+  /* background-color: rgb(237 247 249); */
+  box-shadow: -4px 0px 1px #868686;
+  /* border: 1px solid transparent; */
+
+  /* box-shadow: 0px 8px 15px rgba(123, 124, 126, 0.5); */
+}
+.btn-moon1 {
+  background-color: rgb(237 247 249);
+  box-shadow: 0px 8px 15px rgba(123, 124, 126, 0.5);
+}
+.btn-sun1 {
+  background-color: #222;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
