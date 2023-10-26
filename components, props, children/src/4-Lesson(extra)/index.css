@@ -5,9 +5,23 @@
 }
 
 .input-change {
-  width: 200px;
+  width: 400px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+  overflow: auto;
   justify-content: space-around;
+  gap: 20px;
+}
+td,
+th {
+  width: 50px;
+  text-align: center;
+  border: 1px solid;
+  padding: 2px;
+  background-color: white;
+}
+table {
+  /* border-collapse: collapse; */
+  border: none;
 }
