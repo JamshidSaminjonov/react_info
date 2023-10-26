@@ -20,7 +20,8 @@ class Lesson2 extends React.Component {
     // console.log("render yurdi");
     return (
       <>
-        <button
+        {
+          /* <button
           onClick={() =>
             this.setState({
               count: this.state.count + 1,
@@ -33,7 +34,8 @@ class Lesson2 extends React.Component {
           style={{ color: this.state.color }}
         >
           click me {this.state.count}
-        </button>
+        // </button> */ add.Component
+        }
       </>
     );
   }
