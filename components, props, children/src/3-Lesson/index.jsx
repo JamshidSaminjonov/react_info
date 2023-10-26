@@ -12,7 +12,7 @@ class Lesson3 extends React.Component {
   render() {
     return (
       <>
-        <div className="btn-group">
+        {/* <div className="btn-group">
           <button
             className="prev"
             onClick={() => {
@@ -32,7 +32,7 @@ class Lesson3 extends React.Component {
           >
             Next
           </button>
-        </div>
+        </div> */}
       </>
     );
   }
