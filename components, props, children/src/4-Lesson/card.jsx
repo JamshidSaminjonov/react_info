@@ -10,7 +10,6 @@ class Cards extends React.Component {
   }
   render() {
     let { color, title, href, cardColor } = this.props;
-    // console.log(color, title, href, cardColor);
     return (
       <>
         <div

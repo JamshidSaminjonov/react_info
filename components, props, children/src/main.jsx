@@ -11,9 +11,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <Lesson2 /> */}
     {/* <Lesson3 /> */}
-    {/* <Lesson4 /> */}
+    <Lesson4 />
     {/* <Lesson4Extra /> */}
-    <Crud />
+    {/* <Crud /> */}
     {/* <Review /> */}
   </React.StrictMode>
 );

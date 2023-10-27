@@ -106,7 +106,7 @@ class Lesson4 extends React.Component {
 
     return (
       <>
-        {/* <div
+        <div
           className="fruits-container"
           style={{
             backgroundColor: this.state.bgcolor,
@@ -216,7 +216,7 @@ class Lesson4 extends React.Component {
               <img src={sun} alt="yuq" />
             </button>
           </div>
-        </div> */}
+        </div>
       </>
     );
   }
