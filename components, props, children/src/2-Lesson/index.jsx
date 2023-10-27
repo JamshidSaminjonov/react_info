@@ -1,5 +1,5 @@
 import React from "react";
-import Review from "./main";
+import { Review } from "./main";
 
 class Lesson2 extends React.Component {
   constructor(props) {
