@@ -1,0 +1,15 @@
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(202, 202, 202);
+  padding: 20px 10px;
+  margin: 20px 0;
+}
+.massage {
+  width: 400px;
+}
+img {
+  cursor: pointer;
+}

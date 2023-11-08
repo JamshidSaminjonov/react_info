@@ -11,9 +11,12 @@ class Lesson5 extends React.Component {
     this.state = {
       base,
       editId: null,
-      canselId: null,
-      //   user,
-      inputUser,
+      newUser: {
+        name: "",
+        age: "",
+        status: "",
+        occupation: "",
+      },
     };
   }
   render() {
@@ -70,24 +73,41 @@ class Lesson5 extends React.Component {
       <>
         <div className="crud">
           <h1>CRUD in React</h1>
+          {/* Add input */}
           <div className="inputs">
             {Object.keys(base[0]).map((v) => {
               if (v != "id") {
-                return (
-                  <>
-                    <input
-                      type="text"
-                      onChange={(e) => addItem(v, e.target.value)}
-                    />
-                  </>
-                );
+                if (v != "age") {
+                  return (
+                    <>
+                      <input
+                        value={this.state.newUser[v]}
+                        type="text"
+                        onChange={(e) => addItem(v, e.target.value)}
+                      />
+                    </>
+                  );
+                } else {
+                  return (
+                    <>
+                      <input
+                        type="number"
+                        onChange={(e) => addItem(v, e.target.value)}
+                      />
+                    </>
+                  );
+                }
               }
             })}
             <button className="btn-input" onClick={() => addSetItem()}>
               Add
             </button>
           </div>
+          {/* Add input */}
+
+          {/* Table */}
           <table border={1}>
+            {/* Thead */}
             <thead>
               <tr>
                 {Object.keys(base[0]).map((v) => (
@@ -97,6 +117,7 @@ class Lesson5 extends React.Component {
                 <th>Edit</th>
               </tr>
             </thead>
+            {/* Thead */}
             <tbody>
               {base.map((items) => {
                 return (
@@ -124,6 +145,7 @@ class Lesson5 extends React.Component {
                       )
                     )}
 
+                    {/* Delete */}
                     <td>
                       <button
                         onClick={() => deleteItem(items.id)}
@@ -136,8 +158,12 @@ class Lesson5 extends React.Component {
                         delete
                       </button>
                     </td>
+                    {/* Delete */}
+
+                    {/* Edit */}
                     {items.id == editId ? (
                       <td>
+                        {/* Save */}
                         <button
                           style={{
                             color: "white",
@@ -148,6 +174,9 @@ class Lesson5 extends React.Component {
                         >
                           save
                         </button>
+                        {/* Save */}
+
+                        {/* Cansel */}
                         <button
                           style={{
                             color: "white",
@@ -159,6 +188,7 @@ class Lesson5 extends React.Component {
                         >
                           Cansel
                         </button>
+                        {/* Cansel */}
                       </td>
                     ) : (
                       <td>
@@ -174,11 +204,13 @@ class Lesson5 extends React.Component {
                         </button>
                       </td>
                     )}
+                    {/* Edit */}
                   </tr>
                 );
               })}
             </tbody>
           </table>
+          {/* Table */}
         </div>
       </>
     );

@@ -1,0 +1,27 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(202, 202, 202);
+  padding: 20px 10px;
+  list-style-type: none;
+  color: white;
+}
+li {
+  position: relative;
+}
+span {
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(58, 160, 255);
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 10px;
+}
