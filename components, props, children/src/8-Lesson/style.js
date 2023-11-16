@@ -6,7 +6,6 @@ const Body = styled.body`
   padding: 0;
 `;
 const Paragrf = styled.p`
-  ${common}
   color: ${({ color }) => color && "red"};
 `;
 export const Box = styled.div`
